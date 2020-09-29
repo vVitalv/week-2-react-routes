@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+import Head from './head'
+
 const CounterView = (props) => {
   return <div>{props.countResult}</div>
 }
@@ -37,8 +39,11 @@ const Counter = () => {
 
   return (
     <div>
-      <CounterView countResult={counter} />
-      <ButtonPanel setCount={setCounter} count={counter} />
+      <Head title="Hello" />
+      <div>
+        <CounterView countResult={counter} />
+        <ButtonPanel setCount={setCounter} count={counter} />
+      </div>
     </div>
   )
 }

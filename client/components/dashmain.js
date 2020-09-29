@@ -13,7 +13,7 @@ const DashMain = () => {
           <Link to="/dashboard/profile/672fae38-e505-49be-a36a-5fafea4cee89">Go To Profile</Link>
         </li>
         <li>
-          <Link to="/dashboard/main">Go To Root</Link>
+          <Link to="/dashboard">Go To Root</Link>
         </li>
       </ul>
     </div>

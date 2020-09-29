@@ -4,6 +4,7 @@ import Header from './header'
 import Dashboard from './dashboard'
 import DashMain from './dashmain'
 import DashProfile from './dashprofile'
+import DashCounter from './dashCounter'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
           <Route exact path="/dashboard" component={() => <Dashboard />} />
           <Route exact path="/dashboard/main" component={() => <DashMain />} />
           <Route exact path="/dashboard/profile/:user" component={() => <DashProfile />} />
+          <Route exact path="/dashboard/profile/counter" component={() => <DashCounter />} />
         </div>
       </div>
     </div>

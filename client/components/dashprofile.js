@@ -6,11 +6,11 @@ const DashProfile = () => {
   return (
     <div id="title">
       Profile
-      <Link to="/dashboard">Go To Root</Link>
-      <Link to="/dashboard/main">Go To Main</Link>
-      <div id="username">
-        {user}
+      <div>
+        <Link to="/dashboard">Go To Root</Link>
+        <Link to="/dashboard/main">Go To Main</Link>
       </div>
+      <div id="username">{user}</div>
     </div>
   )
 }

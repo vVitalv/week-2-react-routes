@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
+import { Link, useParams } from 'react-router-dom'
 
 const Header = () => {
   const [toggled, toggle] = useState(false)
+  const { userName } = useParams()
 
   return (
     <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6">
@@ -23,6 +25,12 @@ const Header = () => {
         >
           Tailwind CSS
         </button>
+      </div>
+      <div id="repository-name" className=" font-bold">
+        {userName}
+        <div>
+          <Link id="go-back" to="/">Go back!</Link>
+        </div>    
       </div>
       {toggled && (
         <div id="menu" className="block">
